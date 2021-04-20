@@ -19,7 +19,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int pos;
+	int	pos;
 
 	pos = 0;
 	while (s[pos] != '\0')

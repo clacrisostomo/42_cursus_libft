@@ -47,6 +47,11 @@ bonus:		$(NAME) $(BONUS_OBJS)
 			$(LIB) $(NAME) $(BONUS_OBJS)
 			$(LIB1) $(NAME)
 
+git:
+			git add .
+			git commit -m "updating norminette v3"
+			git push
+
 .c.o:
 			$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 

@@ -48,7 +48,7 @@ static size_t	wordcount(char const *s, char c)
 	return (words);
 }
 
-char			**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	size_t		words;
 	char		**receiver;
@@ -57,7 +57,8 @@ char			**ft_split(char const *s, char c)
 	if (!s)
 		return (0);
 	words = wordcount(s, c);
-	if (!(receiver = ft_calloc(words + 1, sizeof(char *))))
+	receiver = ft_calloc(words + 1, sizeof(char *));
+	if (!receiver)
 		return (0);
 	lcount = -1;
 	words = 0;
