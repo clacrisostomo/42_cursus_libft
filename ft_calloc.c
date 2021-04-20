@@ -22,7 +22,8 @@ void	*ft_calloc(size_t nmeb, size_t size)
 	void	*rec;
 
 	len = nmeb * size;
-	if (!(rec = malloc(len)))
+	rec = malloc(len);
+	if (!rec)
 		return (0);
 	ft_memset(rec, 0, len);
 	return (rec);

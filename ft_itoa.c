@@ -18,7 +18,7 @@
 
 static void	convnbr(int c, char *str, long int i)
 {
-	unsigned int nbr;
+	unsigned int	nbr;
 
 	nbr = c;
 	if (c < 0)
@@ -31,7 +31,7 @@ static void	convnbr(int c, char *str, long int i)
 	str[i] = (nbr % 10) + '0';
 }
 
-char		*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char		*str;
 	long int	j;

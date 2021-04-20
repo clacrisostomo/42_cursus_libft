@@ -19,18 +19,18 @@
 static int	ft_isspace(int c)
 {
 	if (c == ' ' || c == '\f' || c == '\n' || c == '\r' || c == '\t'
-	|| c == '\v')
+		|| c == '\v')
 		return (1);
 	else
 		return (0);
 }
 
-int			ft_atoi(const char *c)
+int	ft_atoi(const char *c)
 {
-	int sign;
-	int i;
-	int nbr;
-	int conv;
+	int	sign;
+	int	i;
+	int	nbr;
+	int	conv;
 
 	sign = 1;
 	i = 0;
